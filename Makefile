@@ -21,7 +21,8 @@ all: $(EXEC) copydata
 
 $(EXEC): $(OBJS)
 	@if not exist $(BUILDDIR) mkdir $(BUILDDIR)
-	$(CXX) $(CXXFLAGS) -o $@ $(OBJS)
+	# Compilação com linking estático
+	$(CXX) $(CXXFLAGS) -static -static-libgcc -static-libstdc++ -o $@ $(OBJS)
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.cpp
 	@if not exist $(BUILDDIR) mkdir $(BUILDDIR)
