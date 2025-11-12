@@ -86,7 +86,7 @@ int main() {
     system ("cls");
 
     if(opcao == 1) {
-        vector<Moto*> lista = Moto::lerLista("data/motos.txt");
+        vector<Moto*> lista = Moto::lerLista("../data/motos.txt");
         if (lista.empty()) throw std::runtime_error("error 404 motos.txt not found");
 
         bool selecionadoMoto = false;
@@ -130,7 +130,7 @@ int main() {
         }
     }
     else if (opcao == 2) {
-        vector<Carro*> lista = Carro::lerLista("data/carros.txt");
+        vector<Carro*> lista = Carro::lerLista("../data/carros.txt");
         if (lista.empty()) throw runtime_error("error 404 carros.txt not found");
 
         bool selecionadoCarro = false;

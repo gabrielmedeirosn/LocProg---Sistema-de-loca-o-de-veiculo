@@ -11,7 +11,7 @@ Moto::Moto(string tipo, string marca, string model, string cor, float diaria, bo
 vector<Moto*> Moto::lerLista(const string &MotoTxt){
      vector<Moto*> lista; //lista eh o vetor que armazena as Motos
 
-    ifstream arquivoTxt(MotoTxt); //entrada de dados, criando obejto arquivoTxt responsavel por abrir, ler e fechar(como um scanner)
+    ifstream arquivoTxt("../data/" + MotoTxt); //entrada de dados, criando obejto arquivoTxt responsavel por abrir, ler e fechar(como um scanner)
 
     try{
         if(!arquivoTxt.is_open()){

@@ -11,7 +11,7 @@ vector<Carro*> Carro::lerLista(const string &carrosTxt){  //carrosTxt se refere 
 
     vector<Carro*> lista; //lista eh o vetor que armazena os carros
 
-    ifstream arquivoTxt("data/" + carrosTxt); //entrada de dados, criando obejto arquivoTxt responsavel por abrir, ler e fechar(como um scanner)
+    ifstream arquivoTxt("../data/" + carrosTxt); //entrada de dados, criando obejto arquivoTxt responsavel por abrir, ler e fechar(como um scanner)
 
     try{
         if(!arquivoTxt.is_open()){
