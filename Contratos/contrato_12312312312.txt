@@ -1,0 +1,12 @@
+==============================
+      CONTRATO DE LOCPROG     
+==============================
+
+NOME............: GAGAGAGA
+CPF.............: 12312312312
+VEICULO.........: HONDA CIVIC
+VALOR DA DIARIA.: R$170
+DATA DE RETIRADA: 25/11/2022
+DIAS DE LOCACAO.: 12
+SEGURO..........: SIM
+VALOR FINAL.....: R$ 2279.88
