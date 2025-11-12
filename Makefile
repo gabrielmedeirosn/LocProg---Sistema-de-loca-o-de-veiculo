@@ -3,7 +3,7 @@
 # ==========================
 EXEC = build/main.exe
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17 -Iinclude
+CXXFLAGS = -Wall -Wextra -std=c++17 -Iinclude -Os   # Otimização para tamanho
 
 SRCDIR = src
 BUILDDIR = build
@@ -21,7 +21,7 @@ all: $(EXEC) copydata
 
 $(EXEC): $(OBJS)
 	@if not exist $(BUILDDIR) mkdir $(BUILDDIR)
-	# Compilação com linking estático
+	# Linkagem estática total
 	$(CXX) $(CXXFLAGS) -static -static-libgcc -static-libstdc++ -o $@ $(OBJS)
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.cpp
